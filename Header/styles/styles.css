@@ -1,0 +1,18 @@
+:root {
+    --verde-oscuro:#099d8d;
+}
+.header {
+height: 421px;
+width: 320px;
+/* background: url(FALTA URL) */
+background-size: cover;
+display: block;
+}
+
+.encabezado {
+    height: 60px;
+    width: 320px;
+    color: var(--verde-oscuro) ;
+    font-family:'Rubik';
+    display: block;
+}
