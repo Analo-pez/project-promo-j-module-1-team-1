@@ -1,0 +1,56 @@
+:root{
+    --font-open: 'Open Sans', sans-serif;
+    --font-rubik: 'Rubik', sans-serif;
+    --color-darkGreen: #099d8d;
+    --color-lightGreen: #14d9d4;
+    --color-darkGrey: #54585a;
+    --color-lightGrey: #b8b8b9;
+    --color-backgroundGrey: #f1f1f1;
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+.tittleAdalabers{
+    font-size: 24px;
+    text-align: center;
+}
+.boxContent {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+}
+
+.boxAdalaber {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border: 2px solid black;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.boxInfo{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+}
+.name{
+    font-size: 20px;
+    text-align: center;
+}
+
+.info{
+    font-size: 16px;
+    text-align: center;
+}
+.iconsRRSS{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-evenly;
+}
