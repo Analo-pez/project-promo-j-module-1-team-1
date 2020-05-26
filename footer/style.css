@@ -1,0 +1,40 @@
+/* TODO: add css variables  */
+
+.footer {
+  background: #ffffff;
+  font-family: Open Sans;
+  box-sizing: border-box;
+  border-top: solid 1px #b8b8b9;
+  height: 250px;
+  width: 320px;
+}
+
+.footerTeamName {
+  font-size: 14px;
+  color: #b8b8b9;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footerNavigation {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.75;
+  color: #54585a;
+  text-align: center;
+}
+
+.footerNavigationItems {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.footerLogoAdalab {
+  width: 115.9px;
+  height: 45px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
