@@ -1,46 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  border: none;
-  outline: none;
-}
-
 :root {
-  --font-open: "Open Sans", sans-serif;
-  --font-rubik: "Rubik", sans-serif;
-  --color-blueGreen: #099d8d;
-  --color-aqua: #14d9d4;
-  --color-gunmetal: #54585a;
-  --color-coolGrey: #b8b8b9;
-  --color-white: #ffffff;
-  --color-black8: #000000;
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Rubik", sans-serif;
+  --color-primary: #099d8d;
+  --color-secondary: #14d9d4;
+  --color-fontPrimary: #54585a;
+  --color-fontSecondary: #b8b8b9;
+  --color-background: #f1f1f1;
+  --color-light: #ffffff;
+  --color-dark: #000000;
 }
 
 div.rectangle {
-  background-color: blue;
-  rotate: 45deg;
+  background-color: var(--color-light);
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+  top: -15px;
 }
 
-div.strengths-weaknesses {
-  background-color: var(--color-coolGrey);
+div.strengthsWeaknesses {
+  background-color: var(--color-background);
   padding-bottom: 45px;
+  border: solid 1px red;
 }
 
-article {
+div.strengthsWeaknesses > div {
   padding-top: 30px;
   padding-right: 15px;
   padding-left: 15px;
+  border: solid 1px;
 }
 
 h2 {
-  color: var(--color-blueGreen);
-  font-family: var(--font-rubik);
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
   text-align: center;
 }
 
 p {
-  font-family: var(--font-open);
+  font-family: var(--font-primary);
+  color: var(--color-fontPrimary);
   text-align: center;
 }
