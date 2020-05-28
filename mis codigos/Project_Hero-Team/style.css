@@ -1,0 +1,45 @@
+:root {
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Rubik", sans-serif;
+  --color-primary: #099d8d;
+  --color-secondary: #14d9d4;
+  --color-fontPrimary: #54585a;
+  --color-fontSecondary: #b8b8b9;
+  --color-background: #f1f1f1;
+  --color-ligth: #ffffff;
+  --color-dark: #000000;
+}
+
+.quote {
+  background-color: var(--color-fontSecondary);
+  font-family: var(--font-primary);
+  font-size: 18px;
+  color: var(--color-dark);
+  text-align: left;
+  margin: 30px;
+  margin-right: 30px;
+  width: 100%;
+  display: column;
+  padding: 10px;
+}
+.team {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.team h2 {
+  color: var(--color-secondary);
+  font-family: var(--font-rubik);
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.team p {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: var(--color-fontPrimary);
+  text-align: center;
+}
