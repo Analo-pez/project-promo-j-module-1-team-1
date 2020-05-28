@@ -10,37 +10,50 @@
   --color-dark: #000000;
 }
 
-.rectangle {
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  color: inherit;
+  text-decoration: none;
+  /* parece que en el reset no se elimina padding y margin predeterminados por el navegador */
+  margin: 0px;
+  padding: 0px;
+}
+
+/* STRENGTHS WEAKNESSES */
+
+.aboutUsRectangle {
   background-color: var(--color-light);
   width: 30px;
   height: 30px;
-  transform: rotate(45deg);
   position: absolute;
   left: 50%;
-  top: -15px;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.strengthsWeaknesses {
+.aboutUsStrengthsWeaknesses {
   background-color: var(--color-background);
-  padding-bottom: 45px;
-  border: solid 1px red;
-}
-
-.strengthsWeaknesses div {
-  padding-top: 30px;
   padding-right: 15px;
+  padding-bottom: 45px;
   padding-left: 15px;
-  border: solid 1px blue;
+  /* border: solid 1px red; */
 }
 
-h2 {
+.aboutUsStrengthsWeaknesses div {
+  padding-top: 30px;
+  /* border: solid 1px yellow; */
+}
+
+.aboutUsStrengthsWeaknesses h2 {
   color: var(--color-primary);
   font-family: var(--font-secondary);
   text-align: center;
+  /* border: solid 1px green; */
 }
 
-p {
+.aboutUsStrengthsWeaknesses p {
   font-family: var(--font-primary);
   color: var(--color-fontPrimary);
   text-align: center;
+  /* border: solid 1px purple; */
 }
