@@ -10,7 +10,7 @@
   --color-dark: #000000;
 }
 
-div.rectangle {
+.rectangle {
   background-color: var(--color-light);
   width: 30px;
   height: 30px;
@@ -20,17 +20,17 @@ div.rectangle {
   top: -15px;
 }
 
-div.strengthsWeaknesses {
+.strengthsWeaknesses {
   background-color: var(--color-background);
   padding-bottom: 45px;
   border: solid 1px red;
 }
 
-div.strengthsWeaknesses > div {
+.strengthsWeaknesses div {
   padding-top: 30px;
   padding-right: 15px;
   padding-left: 15px;
-  border: solid 1px;
+  border: solid 1px blue;
 }
 
 h2 {
