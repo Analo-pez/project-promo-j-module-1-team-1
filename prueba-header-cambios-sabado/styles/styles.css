@@ -33,7 +33,7 @@
 }
 .nav {
   font-family: var(--font-secondary);
-  color: var (var(--color-light));
+  color: var(--color-light);
   background-color: var(--color-primary);
   display: flex;
   flex-direction: column;
