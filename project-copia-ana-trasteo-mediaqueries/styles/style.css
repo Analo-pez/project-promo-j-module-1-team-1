@@ -71,9 +71,15 @@
   width: 100%;
 }
 
-.headerButtoms li {
+.headerButtoms li:first-child {
+  display: none;
+}
+
+/* ???? */
+.headerButtoms li .headerButtoms li {
   display: inline-block;
 }
+/* ???? */
 
 /* HERO Y ABOUT US */
 
@@ -326,4 +332,9 @@ Poner en el hijo .pair flex-direction: row-reverse
   .headerButtoms li {
     margin: 5px;
   }
+  .headerButtoms li:first-child {
+    display: inline-block
+    width: 430px;
+  }
+  
 }
