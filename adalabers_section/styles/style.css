@@ -26,8 +26,6 @@
 }
 
 
-
-
 /* HEADER */
 
 .headerMain {
@@ -176,6 +174,8 @@
     display: inline-block;
     margin-top: 30px;
 }
+
+
 .adalabersBoxContent {
     display: flex;
     flex-direction: column;
@@ -185,28 +185,23 @@
     display: flex;
     flex-direction: column;
 }
-/*Para la versión escritorio y tablet:
-Poner en el padre .boxAdalaber flex-direction: row
-Poner en el hijo .pair flex-direction: row-reverse
-.pair {
-    flex-direction: row-reverse;
-} 
-*/
 
 .adalabersBoxImg{
- width: 190px;
-  height: 190px;
-  border: 5px solid var(--color-background);
+  background-color: var(--color-background);
+  width: 180px;
+  height: 180px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
   margin-top: 15px; 
+  border-radius: 12px;
+
 }
 
 .adalabersImg{
   width: 180px;
   height: 180px;
-  border-radius: 4px;
+  border: 5px solid var(--color-background);
+  border-radius: 12px;
 }
 
 
@@ -254,46 +249,6 @@ font-size: 16px;
     content: "·";
     margin: 8px;
     font-weight: bold;
-}
-
-
-@media all and (min-width: 768px){
-  .adalabersBox{
-    flex-direction: row;
-  }
-  .adalabersBoxImg{
-    width: 205px;
-    height: 205px;
-  }
-
-   .adalabersImg{
-    width: 205px;
-    height: 205px;
-  }
-  .pair{
-    flex-direction: row-reverse;
-  }
- 
-
-}
-
-@media all and (min-width: 1200px){
-  .adalabersBox{
-    flex-direction: row;
-  }
-  .adalabersBoxImg{
-    width: 278px;
-    height: 278px;
-  }
-
-   .adalabersImg{
-    width: 278px;
-    height: 278px;
-  }
-  .pair{
-    flex-direction: row-reverse;
-  }
-
 }
 
 /* FOOTER */
@@ -346,4 +301,84 @@ font-size: 16px;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 45px;
+}
+
+/* MEDIAQUERIES */
+/* VERSION TABLET */
+
+@media all and (min-width: 768px){
+
+  /* ADALABERS SECTION */
+  
+  .adalabersTittle{
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+  .adalabersBox{
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .adalabersBoxImg{
+    width: 205px;
+    height: 205px;
+    align-self: flex-start;
+    margin-top: 50px;
+  }
+
+  .adalabersImg{
+    width: 205px;
+    height: 205px;
+  }
+
+  .odd .adalabersName, .odd .adalabersInfo{
+    text-align: left;
+    margin-left: 35px;
+    padding: 0px;
+  }
+
+  .pair .adalabersName, .pair .adalabersInfo{
+    text-align: right;
+    margin-right: 35px;
+    padding: 0px;
+
+  }
+  .odd .adalabersIconsRRSS{
+    justify-content: flex-start;
+    margin-left: 35px;
+  }
+
+  .pair .adalabersIconsRRSS{
+    justify-content: flex-end;
+    margin-right: 35px;
+  }
+  .pair{
+    flex-direction: row-reverse;
+  }
+ 
+}
+
+/* VERSION ESCRITORIO */
+
+@media all and (min-width: 1200px){
+
+  /* ADALABERS SECTION */
+  
+  .adalabersBox{
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 138px;
+    margin-right: 138px;
+  }
+
+  .adalabersBoxImg, .adalabersImg{
+    width: 275px;
+    height: 275px;
+  }
+
+  .pair{
+    flex-direction: row-reverse;
+  }
 }
