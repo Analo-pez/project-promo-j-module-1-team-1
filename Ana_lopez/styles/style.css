@@ -31,15 +31,13 @@
   font-family: var(--font-secondary);
   color: var(--color-light);
   width: 100%;
-  height: 401px;
   display: flex;
   flex-direction: column;
   margin: 0px;
-  /*background: url("..project-promo-j-modulo-1-team-1/project/images/hero-mobile-ligth.png")
-    no-repeat center center;*/
+  background: url(../images/hero-mobile-light.png) no-repeat center center;
   background-size: cover;
-  height: 300px;
-  border: 2px solid black;
+  /* Ana López, he cambiado el ancho que no correspondía */
+  height: 421px;
 }
 
 .headerTeam {
@@ -93,15 +91,51 @@
   transform: translate(0%, -60%);
   background-color: var(--color-light);
 }
+
+@media only screen and (min-width: 769px) {
+  .quote {
+    width: 441px;
+    height: 80px;
+    background-color: var(--color-background);
+    opacity: 80%;
+    padding-top: 30px;
+    transform: translate(20%, -118%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .quote {
+    width: 574px;
+    height: 90px;
+    background-color: var(--color-background);
+    opacity: 80%;
+    padding-top: 40px;
+    transform: translate(20%, -115%);
+  }
+}
+/* HE TOCADO HEADER PARA EL HERO, VER JUNTAS */
+@media only screen and (min-width: 769px) {
+  .headerMain {
+    background: url(../images/hero-desktopBlack.png.png) no-repeat center center;
+    height: 550px;
+  }
+}
 .team {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 76px;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
+/* mediaQueries */
+/* @media only screen and (min-width: 1200px) {
+  .team {
+    width: 601px;
+    height: 192px;
+  }
+} */
+
 .team h1 {
   color: var(--color-secondary);
   font-family: var(--font-secondary);
@@ -117,6 +151,7 @@
   color: var(--color-fontPrimary);
   text-align: center;
   line-height: 1.5;
+  opacity: 67%;
 }
 
 /* STRENGTHS WEAKNESSES */
