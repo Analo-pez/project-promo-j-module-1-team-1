@@ -112,7 +112,7 @@
     transform: translate(20%, -115%);
   }
 }
-/* HE TOCADO HEADER PARA EL HERO, VER JUNTAS */
+/* HE TOCADO HEADER PARA EL HERO, VER JUNTAS y revisar los márgenes de todas*/
 @media only screen and (min-width: 769px) {
   .headerMain {
     background: url(../images/hero-desktopBlack.png.png) no-repeat center center;
@@ -129,12 +129,12 @@
   margin-bottom: 30px;
 }
 /* mediaQueries */
-/* @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .team {
-    width: 601px;
-    height: 192px;
+    width: 1200px;
+    height: 357px;
   }
-} */
+}
 
 .team h1 {
   color: var(--color-secondary);
@@ -152,6 +152,16 @@
   text-align: center;
   line-height: 1.5;
   opacity: 67%;
+}
+@media only screen and (min-width: 1200px) {
+  .teamText {
+    width: 601px;
+    height: 192px;
+    margin-left: 299px;
+  }
+  .team h1 {
+    margin-top: 0px;
+  }
 }
 
 /* STRENGTHS WEAKNESSES */
