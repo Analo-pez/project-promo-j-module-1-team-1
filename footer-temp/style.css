@@ -23,18 +23,18 @@
   margin: auto;
   width: 100%;
   padding: 15px;
-  border: solid 1px;
-}
-.lineTop {
-  widows: 100%;
-  height: 1px;
-  border-top: solid 1px var(--color-fontSecondary);
 }
 
 .footer {
+  width: 100%;
+  height: 1px;
+  border-top: solid 1px var(--color-fontSecondary);
+  font-size: 14px;
+}
+
+.footerMainContent {
   background: var(--color-light);
   font-family: Open Sans;
-  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -42,23 +42,18 @@
 }
 
 .footerTeamName {
-  font-size: 14px;
   color: var(--color-fontSecondary);
   margin-top: 30px;
   text-align: center;
 }
 
 .footerNavigation {
-  font-size: 14px;
   font-weight: 600;
   opacity: 0.75;
   line-height: 1.43;
-  color: #54585a;
+  color: var(--color-fontPrimary);
   text-align: center;
-}
-
-.footerInfo {
-  width: 100%;
+  margin-top: 20px;
 }
 
 .footerNavigationItems {
@@ -74,38 +69,41 @@
 .footerLogoAdalab {
   width: 115.9px;
   height: 45px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 45px;
 }
 
-.logoAdalab {
-  width: 115.9px;
-  height: 45px;
-}
-
 @media all and (min-width: 768px) {
-  .footer {
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .footerInfo {
-    display: flex;
+  .footerMainContent {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 10px;
+  }
+
+  .footerTeamName {
+    width: 50%;
+    text-align: left;
+  }
+
+  .footerNavigation {
+    width: 50%;
+    text-align: right;
+    margin-top: 30px;
+  }
+
+  .footerNavigationItems {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .footerLogoAdalab {
-    position: relative;
-    left: -45%;
-    bottom: 0px;
+    margin-top: 15px;
+    transform: translate(-10px, -60px);
   }
-}
-
-@media all and (min-width: 1200px) {
 }

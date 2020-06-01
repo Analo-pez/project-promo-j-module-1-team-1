@@ -15,25 +15,33 @@
   list-style-type: none;
   color: inherit;
   text-decoration: none;
+  margin: 0px;
 }
 
-/* html {
-  font-family: var(--font-primary);
-  font-size: 16px;
-} */
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  padding: 15px;
+}
 
 /* HEADER */
-.header--main {
+
+.headerMain {
   font-family: var(--font-secondary);
   color: var(--color-light);
-  height: 105px;
-  width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  background: url(../images/hero-mobile-light.png) no-repeat center center;
+  background-size: cover;
+  /* Ana López, he cambiado el ancho que no correspondía */
+  height: 421px;
 }
 
-.header--team {
+.headerTeam {
   background-color: var(--color-primary);
-  color: var(--color-light);
-  font-family: var(--font-secondary);
   font-size: 16px;
   line-height: 30px;
   opacity: 95%;
@@ -41,78 +49,75 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.header--menu {
-  height: 45px;
-  width: 320px;
+.headerButtoms {
   background-color: var(--color-secondary);
-  color: var(--color-light);
-  font-family: var(--font-secondary);
-  font-size: 15px;
   line-height: 30px;
   opacity: 90%;
+  font-size: 15px;
   display: flex;
   flex-direction: row;
-  flex: wrap;
-  flex: space-evenly;
-  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: baseline;
+  padding: 0px;
+  width: 100%;
 }
 
-.header--buttoms {
-  font-family: var(--color-light);
-  font-size: 15px;
-  color: var(--color-light);
-  line-height: 30px;
-}
-
-.header--buttoms1 {
-  width: 56px;
-  margin-left: 16px;
-  margin-right: 15px;
-  margin-top: 8px;
-  margin-bottom: 7px;
-}
-.header--buttoms2 {
-  width: 121px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 8px;
-  margin-bottom: 7px;
-}
-.header--buttoms3 {
-  width: 80px;
-  margin-left: 15px;
-  margin-right: 17px;
-  margin-top: 8px;
-  margin-bottom: 7px;
+.headerButtoms li {
+  display: inline-block;
 }
 
 /* HERO Y ABOUT US */
 
-.hero {
-  height: 316px;
-  background-color: cornflowerblue;
-}
 .quote {
-  border: 2px solid red;
   font-family: var(--font-primary);
   font-size: 18px;
-  font-weight: 18px;
+  font-weight: bold;
   line-height: 25px;
   color: var(--color-dark);
   height: 80px;
   padding-top: 14px;
-  padding-right: 15px;
-  padding-left: 15px;
   padding-bottom: 16px;
-  margin-left: 30px;
-  margin-right: 30px;
-  text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   position: absolute;
-  transform: translate(0%, -75%);
+  transform: translate(0%, -60%);
+  background-color: var(--color-light);
+}
+
+@media only screen and (min-width: 769px) {
+  .quote {
+    width: 441px;
+    height: 80px;
+    background-color: var(--color-background);
+    opacity: 80%;
+    padding-top: 30px;
+    transform: translate(20%, -118%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .quote {
+    width: 574px;
+    height: 90px;
+    background-color: var(--color-background);
+    opacity: 80%;
+    padding-top: 40px;
+    transform: translate(20%, -115%);
+  }
+}
+/* HE TOCADO HEADER PARA EL HERO, VER JUNTAS y revisar los márgenes de todas*/
+@media only screen and (min-width: 769px) {
+  .headerMain {
+    background: url(../images/hero-desktopBlack.png.png) no-repeat center center;
+    height: 550px;
+  }
 }
 .team {
   display: flex;
@@ -120,12 +125,20 @@
   box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 76px;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
+/* mediaQueries */
+@media only screen and (min-width: 1200px) {
+  .team {
+    width: 1200px;
+    height: 357px;
+  }
+}
+
 .team h1 {
   color: var(--color-secondary);
-  font-family: var(--font-rubik);
+  font-family: var(--font-secondary);
   font-size: 24px;
   text-align: center;
   display: flex;
@@ -137,46 +150,54 @@
   font-size: 16px;
   color: var(--color-fontPrimary);
   text-align: center;
+  line-height: 1.5;
+  opacity: 67%;
+}
+@media only screen and (min-width: 1200px) {
+  .teamText {
+    width: 601px;
+    height: 192px;
+    margin-left: 299px;
+  }
+  .team h1 {
+    margin-top: 0px;
+  }
 }
 
 /* STRENGTHS WEAKNESSES */
 
-.rectangle {
+.aboutUsRectangle {
   background-color: var(--color-light);
   width: 30px;
   height: 30px;
-  transform: rotate(45deg);
   position: absolute;
   left: 50%;
-  top: -15px;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.strengthsWeaknesses {
+.aboutUsStrengthsWeaknesses {
   background-color: var(--color-background);
-  padding-bottom: 45px;
-  border: solid 1px red;
-}
-
-.strengthsWeaknesses div {
-  padding-top: 30px;
   padding-right: 15px;
+  padding-bottom: 45px;
   padding-left: 15px;
-  border: solid 1px blue;
 }
 
-.strengthsWeaknesses h2 {
+.aboutUsStrengthsWeaknesses div {
+  padding-top: 30px;
+  line-height: 1.5;
+}
+
+.aboutUsStrengthsWeaknesses h2 {
   color: var(--color-primary);
   font-family: var(--font-secondary);
   text-align: center;
 }
 
-.strengthsWeaknesses p {
+.aboutUsStrengthsWeaknesses p {
   font-family: var(--font-primary);
   color: var(--color-fontPrimary);
   text-align: center;
 }
-
-/*ADALABERS SECTION*/
 
 /*ADALABERS SECTION*/
 
@@ -231,6 +252,7 @@ Poner en el hijo .pair flex-direction: row-reverse
 .adalabersBoxInfo {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
 }
 
 .adalabersName {
@@ -249,16 +271,14 @@ Poner en el hijo .pair flex-direction: row-reverse
   padding-right: 20px;
   color: var(--color-fontPrimary);
   font-family: var(--font-primary);
-  margin-top: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 15px;
 }
 
 .adalabersIconsRRSS {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  margin-top: 10px;
+  margin-top: 15px;
   color: var(--color-primary);
   font-size: 16px;
 }
@@ -269,7 +289,7 @@ Poner en el hijo .pair flex-direction: row-reverse
   font-size: 16px;
 }
 
-.fab::after {
+.fab:after {
   content: "·";
   margin: 8px;
   font-weight: bold;
@@ -280,10 +300,10 @@ Poner en el hijo .pair flex-direction: row-reverse
 /* TODO: add css variables  */
 
 .footer {
-  background: #ffffff;
+  background: var(--color-light);
   font-family: Open Sans;
   box-sizing: border-box;
-  border-top: solid 1px #b8b8b9;
+  border-top: solid 1px var(--color-fontSecondary);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -292,7 +312,7 @@ Poner en el hijo .pair flex-direction: row-reverse
 
 .footerTeamName {
   font-size: 14px;
-  color: #b8b8b9;
+  color: var(--color-fontSecondary);
   margin-top: 30px;
   text-align: center;
 }
@@ -301,13 +321,20 @@ Poner en el hijo .pair flex-direction: row-reverse
   font-size: 14px;
   font-weight: 600;
   opacity: 0.75;
+  line-height: 1.43;
   color: #54585a;
   text-align: center;
+  margin-top: 20px;
 }
 
 .footerNavigationItems {
   list-style-type: none;
   padding: 0px;
+}
+
+.footerNavigationItems a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .footerLogoAdalab {
