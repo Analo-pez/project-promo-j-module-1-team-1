@@ -34,8 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
-
+}
 
 .hero {
   background: url(../images/hero-mobile-light.png) no-repeat center;
@@ -127,7 +126,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-
 .team h1 {
   color: var(--color-secondary);
   font-family: var(--font-secondary);
@@ -148,109 +146,107 @@ h1 {
 
 /* STRENGTHS_WEAKNESSES */
 
-
-.aboutUsStrengthsWeaknesses div.aboutUsRectangle {
-  background-color: var(--color-light);
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  border: solid 1px orange;
-}
-
 .aboutUsStrengthsWeaknesses {
   background-color: var(--color-background);
   padding-right: 15px;
   padding-bottom: 45px;
   padding-left: 15px;
+  position: relative;
+}
+
+.aboutUsRectangle {
+  background-color: var(--color-light);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.aboutUsStrengthsWeaknessesBoxes {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.aboutUsStrengthsWeaknesses div {
+.aboutUsStrengthsWeaknessesBoxes div {
   padding-top: 30px;
   line-height: 1.5;
-  border: solid 1px darkblue;
 }
 
-.aboutUsStrengthsWeaknesses h2 {
+.aboutUsStrengthsWeaknessesBoxes h2 {
   color: var(--color-primary);
   font-family: var(--font-secondary);
   text-align: center;
-  border: solid 1px mediumseagreen;
 }
 
-.aboutUsStrengthsWeaknesses p {
+.aboutUsStrengthsWeaknessesBoxes p {
   font-family: var(--font-primary);
   color: var(--color-fontPrimary);
   text-align: center;
-  border: solid 1px red;
 }
 
-   /*ADALABERS SECTION*/  
-   
-   .adalaberSection{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-light);
+/*ADALABERS SECTION*/
+
+.adalaberSection {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light);
 }
 
-.adalabersTittle{
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    color: var(--color-primary);
-    font-family: var(--font-secondary);
-    display: inline-block;
-    margin-top: 30px;
+.adalabersTittle {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  display: inline-block;
+  margin-top: 30px;
 }
-
 
 .adalabersBoxContent {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .adalabersBox {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.adalabersBoxImg{
+.adalabersBoxImg {
   background-color: var(--color-background);
   width: 180px;
   height: 180px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px; 
+  margin-top: 15px;
   border-radius: 12px;
-
 }
 
-.adalabersImg{
+.adalabersImg {
   width: 180px;
   height: 180px;
   border: 5px solid var(--color-background);
   border-radius: 12px;
 }
 
-
-.adalabersBoxInfo{
+.adalabersBoxInfo {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
 
-.adalabersName{
+.adalabersName {
   font-family: var(--font-primary);
   font-weight: normal;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 0;;
+  margin-bottom: 0;
 }
 
-.adalabersInfo{
+.adalabersInfo {
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
@@ -261,7 +257,7 @@ h1 {
   margin: 15px;
 }
 
-.adalabersIconsRRSS{
+.adalabersIconsRRSS {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -270,16 +266,16 @@ h1 {
   font-size: 16px;
 }
 
-.fab, .fas{
-display: inline-block;
-font-size: 16px;
-
+.fab,
+.fas {
+  display: inline-block;
+  font-size: 16px;
 }
 
-.fab:after{
-    content: "·";
-    margin: 8px;
-    font-weight: bold;
+.fab:after {
+  content: "·";
+  margin: 8px;
+  font-weight: bold;
 }
 
 .footer {
@@ -344,20 +340,19 @@ font-size: 16px;
 
   .hero {
     height: 421px;
-    }
+  }
 
   .nav {
-      background-color: var(--color-primary);
-      }
-      
+    background-color: var(--color-primary);
+  }
 
   .nav_content {
-    background-color:var(--color-primary) ;
+    background-color: var(--color-primary);
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
     margin-right: 45px;
-    margin-bottom: 14px; 
+    margin-bottom: 14px;
   }
 
   .nav_content li {
@@ -382,123 +377,131 @@ font-size: 16px;
   }
 
   .hero {
-    background: url(../images/hero-desktopBlack.png.png)no-repeat center center;
+    background: url(../images/hero-desktopBlack.png.png) no-repeat center center;
     height: 550px;
     background-size: cover;
   }
 
+  .team h1 {
+    color: var(--color-primary);
+  }
 
-/* STRENGTHS_WEAKNESSES */
-  
+  /* STRENGTHS_WEAKNESSES */
+
   .aboutUsStrengthsWeaknesses {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 45px;
-    padding-bottom: 60px;
-    padding-left: 45px;
-    width: 768px;
-  }
-  .aboutUsStrengthsWeaknesses div {
-    padding-top: 0px;
-    width: 324px;
     padding-top: 45px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+    padding-left: 30px; /* suma de padding aquí (30px) + margin de los div (15px) da los 45 de loslados */
   }
-  .aboutUsStrengthsWeaknesses div p {
+
+  .aboutUsStrengthsWeaknessesBoxes {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .aboutUsStrengthsWeaknessesBoxes div {
+    padding-top: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .aboutUsStrengthsWeaknessesBoxes h2 {
+    color: var(--color-primary);
+    font-family: var(--font-secondary);
+    text-align: center;
+  }
+
+  .aboutUsStrengthsWeaknessesBoxes p {
     margin-top: 15px;
   }
-  .aboutUsStrengthsWeaknesses div.aboutUsRectangle {
-    padding-top: 0px;
-  }
-    /* ADALABERS SECTION */
-  
-    .adalabersTittle{
-      margin-bottom: 30px;
-      margin-top: 45px;
-  }
-    .adalabersBox{
-      flex-direction: row;
-      align-items: center;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-  
-    .adalabersBoxImg{
-      width: 205px;
-      height: 205px;
-      align-self: flex-start;
-      margin-top: 50px;
-    }
-  
-    .adalabersImg{
-      width: 205px;
-      height: 205px;
-    }
-  
-    .odd .adalabersName, .odd .adalabersInfo{
-      text-align: left;
-      margin-left: 35px;
-      padding: 0px;
-    }
-  
-    .pair .adalabersName, .pair .adalabersInfo{
-      text-align: right;
-      margin-right: 35px;
-      padding: 0px;
-  
-    }
-    .odd .adalabersIconsRRSS{
-      justify-content: flex-start;
-      margin-left: 35px;
-    }
-  
-    .pair .adalabersIconsRRSS{
-      justify-content: flex-end;
-      margin-right: 35px;
-    }
-    .pair{
-      flex-direction: row-reverse;
-    }
 
-    .footerMainContent {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-  
-    .footerTeamName {
-      width: 50%;
-      text-align: left;
-    }
-  
-    .footerNavigation {
-      width: 50%;
-      text-align: right;
-      margin-top: 30px;
-    }
-  
-    .footerNavigationItems {
-      height: 90px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .footerLogoAdalab {
-      margin-top: 15px;
-      transform: translate(-10px, -60px);
-    }
-  
+  /* ADALABERS SECTION */
+
+  .adalabersTittle {
+    margin-bottom: 30px;
+    margin-top: 45px;
+  }
+  .adalabersBox {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .adalabersBoxImg {
+    width: 205px;
+    height: 205px;
+    align-self: flex-start;
+    margin-top: 50px;
+  }
+
+  .adalabersImg {
+    width: 205px;
+    height: 205px;
+  }
+
+  .odd .adalabersName,
+  .odd .adalabersInfo {
+    text-align: left;
+    margin-left: 35px;
+    padding: 0px;
+  }
+
+  .pair .adalabersName,
+  .pair .adalabersInfo {
+    text-align: right;
+    margin-right: 35px;
+    padding: 0px;
+  }
+  .odd .adalabersIconsRRSS {
+    justify-content: flex-start;
+    margin-left: 35px;
+  }
+
+  .pair .adalabersIconsRRSS {
+    justify-content: flex-end;
+    margin-right: 35px;
+  }
+  .pair {
+    flex-direction: row-reverse;
+  }
+
+  .footerMainContent {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footerTeamName {
+    width: 50%;
+    text-align: left;
+  }
+
+  .footerNavigation {
+    width: 50%;
+    text-align: right;
+    margin-top: 30px;
+  }
+
+  .footerNavigationItems {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footerLogoAdalab {
+    margin-top: 15px;
+    transform: translate(-10px, -60px);
+  }
 }
 
-
 @media only screen and (min-width: 1200px) {
+  /* HEADER */
 
-/* HEADER */
-
-
-
-/* HERO & ABOUT US */
+  /* HERO & ABOUT US */
 
   .quote {
     width: 574px;
@@ -526,27 +529,31 @@ font-size: 16px;
   /* STRENGTHS_WEAKNESSES */
 
   .aboutUsStrengthsWeaknesses {
-    padding-left: 138px;
-    padding-right: 138px;
-    width: 1200px;
+    padding-left: 111.5px;
+    padding-right: 111.5px;
+  }
+
+  .aboutUsStrengthsWeaknessesBoxes div {
+    margin-right: 22.5px;
+    margin-left: 22.5px;
   }
 
   /* ADALABERS SECTION */
 
-  .adalabersBox{
+  .adalabersBox {
     flex-direction: row;
     justify-content: center;
     margin-left: 138px;
     margin-right: 138px;
   }
 
-  .adalabersBoxImg, .adalabersImg{
+  .adalabersBoxImg,
+  .adalabersImg {
     width: 275px;
     height: 275px;
   }
 
-  .pair{
+  .pair {
     flex-direction: row-reverse;
   }
-
 }
