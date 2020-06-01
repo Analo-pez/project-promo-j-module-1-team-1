@@ -15,20 +15,28 @@
   list-style-type: none;
   color: inherit;
   text-decoration: none;
-  /* parece que en el reset no se elimina padding y margin predeterminados por el navegador */
   margin: 0px;
-  padding: 0px;
 }
 
 /* STRENGTHS WEAKNESSES */
 
-.aboutUsRectangle {
+.wrapper {
+  max-width: 768px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid olive;
+}
+
+.aboutUsStrengthsWeaknesses div.aboutUsRectangle {
   background-color: var(--color-light);
   width: 30px;
   height: 30px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
+  border: solid 1px orange;
 }
 
 .aboutUsStrengthsWeaknesses {
@@ -36,24 +44,68 @@
   padding-right: 15px;
   padding-bottom: 45px;
   padding-left: 15px;
-  /* border: solid 1px red; */
 }
 
 .aboutUsStrengthsWeaknesses div {
   padding-top: 30px;
-  /* border: solid 1px yellow; */
+  line-height: 1.5;
+  border: solid 1px darkblue;
 }
 
 .aboutUsStrengthsWeaknesses h2 {
   color: var(--color-primary);
   font-family: var(--font-secondary);
   text-align: center;
-  /* border: solid 1px green; */
+  border: solid 1px mediumseagreen;
 }
 
 .aboutUsStrengthsWeaknesses p {
   font-family: var(--font-primary);
   color: var(--color-fontPrimary);
   text-align: center;
-  /* border: solid 1px purple; */
+  border: solid 1px red;
+}
+
+/* MEDIAQUERIES */
+
+/* tablet */
+@media all and (min-width: 768px) {
+  .wrapper {
+    max-width: 1200px;
+    margin-top: 30px;
+  }
+  .aboutUsStrengthsWeaknesses {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 45px;
+    padding-bottom: 60px;
+    padding-left: 45px;
+    width: 768px;
+  }
+  .aboutUsStrengthsWeaknesses div {
+    padding-top: 0px;
+    width: 324px;
+    padding-top: 45px;
+  }
+  .aboutUsStrengthsWeaknesses div p {
+    margin-top: 15px;
+  }
+  .aboutUsStrengthsWeaknesses div.aboutUsRectangle {
+    padding-top: 0px;
+  }
+}
+
+/* desktop */
+@media all and (min-width: 1200px) {
+  .wrapper {
+    margin-top: 0px;
+  }
+
+  .aboutUsStrengthsWeaknesses {
+    background-color: cyan;
+    padding-left: 138px;
+    padding-right: 138px;
+    width: 1200px;
+  }
 }
