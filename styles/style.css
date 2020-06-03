@@ -106,7 +106,7 @@
   margin-bottom: 30px;
 }
 
-.team h1 {
+.team h2 {
   color: var(--color-secondary);
   font-family: var(--font-secondary);
   font-size: 24px;
@@ -371,7 +371,7 @@
     background-size: cover;
   }
 
-  .team h1 {
+  .team h2 {
     color: var(--color-primary);
   }
 
@@ -513,7 +513,7 @@
     height: 192px;
     margin-left: 299px;
   }
-  .team h1 {
+  .team h2 {
     margin-top: 0px;
   }
 
