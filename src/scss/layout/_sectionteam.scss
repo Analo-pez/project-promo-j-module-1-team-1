@@ -1,0 +1,192 @@
+
+
+/* HERO Y ABOUT US */
+
+.lemaAteam {
+    position: relative;
+  }
+  
+  .quote {
+    font-family: $font-primary;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    color: $color-dark;
+    height: 80px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    margin-right: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(0%, -120%);
+    background-color: $color-light;
+    margin-left: 15px;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  
+  .team h2 {
+    color: $color-secondary;
+    font-family: $font-secondary;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .team p {
+    font-family: $font-primary;
+    font-size: 16px;
+    color: $color-fontPrimary;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 67%;
+  }
+  
+  /* STRENGTHS_WEAKNESSES */
+  
+  .aboutUsStrengthsWeaknesses {
+    background-color: $color-background;
+    padding-right: 15px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    position: relative;
+  }
+  
+  .aboutUsRectangle {
+    background-color: $color-light;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .aboutUsStrengthsWeaknessesBoxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .aboutUsStrengthsWeaknessesBoxes div {
+    padding-top: 30px;
+    line-height: 1.5;
+  }
+  
+  .aboutUsStrengthsWeaknessesBoxes h2 {
+    color: $color-primary;
+    font-family: $font-secondary;
+    text-align: center;
+  }
+  
+  .aboutUsStrengthsWeaknessesBoxes p {
+    font-family: $font-primary;
+    color: $color-fontPrimary;
+    text-align: center;
+  }
+
+  @media all and (min-width: 768px) {
+
+    /* HERO & ABOUT US */
+  
+    .quote {
+      width: 441px;
+      height: 80px;
+      background-color: $color-background;
+      opacity: 80%;
+      padding-top: 30px;
+      transform: translate(20%, -187%);
+    }
+  
+    .hero {
+      background: url(../images/hero-desktopBlack.png.png) no-repeat center center;
+      height: 550px;
+      background-size: cover;
+    }
+  
+    .team h2 {
+      color: $color-primary;
+    }
+  
+    /* STRENGTHS_WEAKNESSES */
+  
+    .aboutUsStrengthsWeaknesses {
+      padding-top: 45px;
+      padding-bottom: 60px;
+      padding-right: 30px;
+      padding-left: 30px; /* suma de padding aquí (30px) + margin de los div (15px) da los 45 de loslados */
+    }
+  
+    .aboutUsStrengthsWeaknessesBoxes {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .aboutUsStrengthsWeaknessesBoxes div {
+      padding-top: 0px;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  
+    .aboutUsStrengthsWeaknessesBoxes h2 {
+      color: $color-primary;
+      font-family: $font-secondary;
+      text-align: center;
+    }
+  
+    .aboutUsStrengthsWeaknessesBoxes p {
+      margin-top: 15px;
+    }
+  }
+
+
+  @media only screen and (min-width: 1200px) {
+    /* HERO & ABOUT US */
+  
+    .quote {
+      width: 574px;
+      height: 90px;
+      background-color: $color-background;
+      opacity: 80%;
+      padding-top: 40px;
+      transform: translate(20%, -176%);
+    }
+  
+    .team {
+      width: 1200px;
+      height: 357px;
+    }
+  
+    .teamText {
+      width: 601px;
+      height: 192px;
+      margin-left: 299px;
+    }
+    .team h2 {
+      margin-top: 0px;
+    }
+  
+    /* STRENGTHS_WEAKNESSES */
+  
+    .aboutUsStrengthsWeaknesses {
+      padding-left: 111.5px;
+      padding-right: 111.5px;
+    }
+  
+    .aboutUsStrengthsWeaknessesBoxes div {
+      margin-right: 22.5px;
+      margin-left: 22.5px;
+    }
+  }
+  

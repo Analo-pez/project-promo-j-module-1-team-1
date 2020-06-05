@@ -1,0 +1,169 @@
+
+/*ADALABERS SECTION*/
+
+.adalaberSection {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-light;
+  }
+  
+  .adalabersTittle {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: $color-primary;
+    font-family: $font-secondary;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  
+  .adalabersBoxContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adalabersBox {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adalabersBoxImg {
+    background-color: $color-background;
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 12px;
+  }
+  
+  .adalabersImg {
+    width: 180px;
+    height: 180px;
+    border: 5px solid $color-background;
+    border-radius: 12px;
+  }
+  
+  .adalabersBoxInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  
+  .adalabersName {
+    font-family: $font-primary;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .adalabersInfo {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $color-fontPrimary;
+    font-family: $font-primary;
+    margin: 15px;
+  }
+  
+  .adalabersIconsRRSS {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    color: $color-primary;
+    font-size: 16px;
+  }
+  
+  .fab,
+  .fas {
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  .fab:after {
+    content: "·";
+    margin: 8px;
+    font-weight: bold;
+  }
+
+  
+@media all and (min-width: 768px) {
+
+  /* ADALABERS SECTION */
+
+  .adalabersTittle {
+    margin-bottom: 30px;
+    margin-top: 45px;
+  }
+  .adalabersBox {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .adalabersBoxImg {
+    width: 205px;
+    height: 205px;
+    align-self: flex-start;
+    margin-top: 50px;
+  }
+
+  .adalabersImg {
+    width: 205px;
+    height: 205px;
+  }
+
+  .odd .adalabersName,
+  .odd .adalabersInfo {
+    text-align: left;
+    margin-left: 35px;
+    padding: 0px;
+  }
+
+  .pair .adalabersName,
+  .pair .adalabersInfo {
+    text-align: right;
+    margin-right: 35px;
+    padding: 0px;
+  }
+  .odd .adalabersIconsRRSS {
+    justify-content: flex-start;
+    margin-left: 35px;
+  }
+
+  .pair .adalabersIconsRRSS {
+    justify-content: flex-end;
+    margin-right: 35px;
+  }
+  .pair {
+    flex-direction: row-reverse;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  /* ADALABERS SECTION */
+
+  .adalabersBox {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 138px;
+    margin-right: 138px;
+  }
+
+  .adalabersBoxImg,
+  .adalabersImg {
+    width: 275px;
+    height: 275px;
+  }
+
+  .pair {
+    flex-direction: row-reverse;
+  }
+}
