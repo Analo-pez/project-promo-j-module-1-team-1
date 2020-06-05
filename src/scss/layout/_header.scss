@@ -9,7 +9,7 @@
   background-color: rgba(172, 236, 229, 0.9);
 }
 
-.heroImageContainer {
+.hero__imagecontainer {
   width: 100%;
   height: 90%;
   max-width: 1200px;
@@ -19,7 +19,7 @@
   transform: translate(-50%);
 }
 
-.heroImage {
+.hero__imagecontainer--adjust {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -40,13 +40,13 @@
   top: 0;
 }
 
-.navContainer {
+.nav__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.headerTitle {
+.nav__container--headertitle {
   margin: auto;
   line-height: 30px;
   font-size: 16px;
@@ -56,7 +56,7 @@
   height: 60px;
 }
 
-.navContent {
+.nav__container--navcontent {
   background-color: $color-secondary;
   font-size: 15px;
   opacity: 90%;
@@ -77,7 +77,7 @@
     height: 421px;
   }
 
-  .navContainer {
+  .nav__container {
     flex-direction: row;
     justify-content: space-between;
     height: 60px;
@@ -87,7 +87,7 @@
     background-color: $color-primary;
   }
 
-  .headerTitle {
+  .nav__container--headertitle {
     padding-top: 0px;
     padding-bottom: 0px;
     height: 100%;
@@ -98,7 +98,7 @@
     align-items: center;
   }
 
-  .navContent {
+  .nav__container--navcontent {
     background-color: $color-primary;
     margin-right: 45px;
     margin-bottom: 14px;
@@ -109,7 +109,7 @@
     height: 100%;
   }
 
-  .navContent li {
+  .nav__container--navcontent li {
     padding-left: 19px;
   }
 }
