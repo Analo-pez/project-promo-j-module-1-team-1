@@ -1,26 +1,49 @@
-
 /* HEADER */
 
 .hero {
-  background: url(../images/hero-mobile-light.png) no-repeat center;
   width: 100%;
   height: 421px;
-  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgba(172, 236, 229, 0.9);
+}
+
+.heroImageContainer {
+  width: 100%;
+  height: 90%;
+  max-width: 1200px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  object-fit: contain; //makes the image resize in its container
+}
+
+.nav {
+  position: fixed;
+  z-index: 999;
+  font-family: $font-secondary;
+  color: $color-light;
+  background-color: $color-primary;
+  width: 100%;
+  top: 0;
 }
 
 .navContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.nav {
-  font-family: $font-secondary;
-  color: $color-light;
-  background-color: $color-primary;
-  width: 100%;
-  position: absolute;
-  top: 0;
 }
 
 .headerTitle {
@@ -46,7 +69,6 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
 
 @media all and (min-width: 768px) {
   /* HEADER */
