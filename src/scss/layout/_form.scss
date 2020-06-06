@@ -9,31 +9,33 @@
   flex-direction: column;
   align-items: center;
   padding: 15px;
-}
 
-.contact__title {
-  color: $color-primary;
-  font-family: $font-secondary;
-  font-size: 24px;
-  line-height: 45px;
-  font-weight: 500;
-  margin-top: 30px;
-}
-
-.contact__p {
-  font-family: $font-primary;
-  color: $color-fontPrimary;
-  text-align: center;
-  line-height: 1.5;
-  margin-top: 15px;
-}
-.contact__note {
-  font-family: $font-primary;
-  font-size: 12px;
-  opacity: 80%;
-  color: $color-fontPrimary;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  @media all and (min-width: 768px) {
+    width: 422px;
+  }
+  &__title {
+    color: $color-primary;
+    font-family: $font-secondary;
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+  &__p {
+    font-family: $font-primary;
+    color: $color-fontPrimary;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+  &__note {
+    font-family: $font-primary;
+    font-size: 12px;
+    opacity: 80%;
+    color: $color-fontPrimary;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 // FORMULARIO
@@ -49,31 +51,42 @@
   display: flex;
   justify-content: center;
   text-transform: capitalize;
-}
-.form__name {
-  flex-direction: column;
+
+  &__name {
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+      display: flex;
+      width: 422px;
+    }
+  }
+  &__mail {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  &__telephone {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  &__comments {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  &__button {
+    height: 45px;
+    border-radius: 4px;
+    background-color: $color-primary;
+    color: $color-light;
+    width: 100%;
+    border: none;
+
+    @media all and (min-width: 768px) {
+      width: 50%;
+      transform: translate(210px, 0px);
+    }
+  }
 }
 
-.form__mail {
-  flex-direction: column;
-  margin-top: 10px;
-}
-.form__telephone {
-  flex-direction: column;
-  margin-top: 10px;
-}
-.form__comments {
-  flex-direction: column;
-  margin-top: 10px;
-}
-.form__button {
-  height: 45px;
-  border-radius: 4px;
-  background-color: $color-primary;
-  color: $color-light;
-  width: 100%;
-  border: none;
-}
 .title2 {
   margin-bottom: 10px;
   display: flex;
@@ -90,26 +103,4 @@
   margin-bottom: 30px;
 }
 
-@media all and (min-width: 768px) {
-  // .wrapper {
-  //   max-width: 1200px;
-  //   margin: auto;
-  //   width: 100%;
-  // }
-  .contact {
-    width: 422px;
-  }
-  .form__name {
-    display: flex;
-    width: 422px;
-  }
-  .form__button {
-    width: 50%;
-    transform: translate(210px, 0px);
-  }
-}
-
 // @media only screen and (min-width: 1200px) {
-//   .form {
-//   }
-// }
