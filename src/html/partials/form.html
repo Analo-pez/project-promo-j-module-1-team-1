@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b06a5f3def.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/icon-adalab.png"
+    />
+    <title>Contacto</title>
+  </head>
+  <!-- <include src="./partials/header.html"></include> -->
+  <main class="main">
+    <section class="wrapper">
+      <div class="contact">
+        <span class="title">CONTACTO</span>
+        <p>
+          Si desea obtener más información sobre alguna o todas las componentes
+          del A-Team, no dude en completar el formulario y nos pondremos en
+          contacto en menos tiempo del que tardariamos en desactivar un
+          artefacto explosivo.
+        </p>
+        <span class="note"
+          >Todos los campos marcados con * son obligatorios</span
+        >
+      </div>
+      <div class="form">
+        <form action="/signup" method="post">
+          <div class="name">
+            <label for="full__name"></label>
+            <span class="title2">nombre completo*</span>
+            <input
+              class="letters"
+              placeholder="Nombre..."
+              id="fullName"
+              type="text"
+              name="firstName"
+              required
+            />
+          </div>
+          <div class="mail">
+            <label for="mail"></label>
+            <span class="title2">email*</span>
+            <input
+              class="letters"
+              placeholder="nombre.apellidos@gmail.com"
+              id="mail"
+              type="emailAdress"
+              name="mail"
+              required
+            />
+          </div>
+          <div class="telephone">
+            <label for="telephone"></label>
+            <span class="title2">teléfono</span>
+            <input
+              class="letters"
+              placeholder="ej: 123456789"
+              id="telephone"
+              type="tel"
+              name="telephone"
+            />
+          </div>
+          <div class="comments">
+            <label for="comments"></label>
+            <span class="title2">mensaje*</span>
+            <textarea
+              class="letters"
+              placeholder="¿Qué necesitas?"
+              id="comments"
+              type="number"
+              name="phone"
+              rows="4"
+              cols="40"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <input class="button" type="submit" value="ENVIAR" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- <include src="./partials/footer.html"></include> -->
+</html>
