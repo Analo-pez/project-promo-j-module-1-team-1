@@ -16,24 +16,28 @@
   </head>
   <include src="./partials/header.html"></include>
   <main class="main">
-    <section class="wrapper">
-      <div class="contact">
-        <span class="title">CONTACTO</span>
-        <p>
-          Si desea obtener más información sobre alguna o todas las componentes
-          del A-Team, no dude en completar el formulario y nos pondremos en
-          contacto en menos tiempo del que tardariamos en desactivar un
-          artefacto explosivo.
+    <section>
+      <div class="contact wrapper">
+        <span class="contact__title">CONTACTO</span>
+        <p class="contact__p">
+          Para más información sobre las componentes del A-Team, rellene el
+          formulario y nos pondremos en contacto en menos tiempo del que
+          tardaríamos en desactivar un artefacto explosivo.
         </p>
-        <span class="note"
-          >Todos los campos marcados con * son obligatorios</span
+        <span class="contact__note"
+          >Todos los campos marcados con
+          <p class="symbol">*</p>
+          son obligatorios</span
         >
       </div>
-      <div class="form">
+      <div class="form wrapper">
         <form action="/signup" method="post">
-          <div class="name">
+          <div class="form__name">
             <label for="full__name"></label>
-            <span class="title2">nombre completo*</span>
+            <span class="title2"
+              >nombre completo
+              <p class="symbol">*</p></span
+            >
             <input
               class="letters"
               placeholder="Nombre..."
@@ -43,9 +47,12 @@
               required
             />
           </div>
-          <div class="mail">
+          <div class="form__mail">
             <label for="mail"></label>
-            <span class="title2">email*</span>
+            <span class="title2"
+              >email
+              <p class="symbol">*</p></span
+            >
             <input
               class="letters"
               placeholder="nombre.apellidos@gmail.com"
@@ -55,7 +62,7 @@
               required
             />
           </div>
-          <div class="telephone">
+          <div class="form__telephone">
             <label for="telephone"></label>
             <span class="title2">teléfono</span>
             <input
@@ -66,9 +73,12 @@
               name="telephone"
             />
           </div>
-          <div class="comments">
+          <div class="form__comments">
             <label for="comments"></label>
-            <span class="title2">mensaje*</span>
+            <span class="title2"
+              >mensaje
+              <p class="symbol">*</p></span
+            >
             <textarea
               class="letters"
               placeholder="¿Qué necesitas?"
@@ -81,7 +91,7 @@
             ></textarea>
           </div>
           <div>
-            <input class="button" type="submit" value="ENVIAR" />
+            <input class="form__button" type="submit" value="ENVIAR" />
           </div>
         </form>
       </div>
