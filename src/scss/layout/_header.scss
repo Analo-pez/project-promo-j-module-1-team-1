@@ -61,15 +61,12 @@
         width: 100%;
       }
 
-        @media all and (min-width: 768px) {
+      @media all and (min-width: 768px) {
         width: 140px;
-      } 
-
-      
+      }
     }
 
     &--navcontent {
-      background-color: $color-secondary;
       font-size: 15px;
       opacity: 90%;
       display: flex;
@@ -80,10 +77,27 @@
       height: 45px;
       padding-left: 15px;
       padding-right: 15px;
+      background-color: $color-secondary;
 
       & li {
+        :hover {
+          background-color: $color-primary;
+          transition: background-color ease 0.8s;
+          //opacity: 0.7;
+          //transition: opacity ease 0.8s;
+        }
+        & a {
+          padding: 15px;
+        }
         @media all and (min-width: 768px) {
           padding-left: 19px;
+          background-color: $color-primary;
+          :hover {
+            background-color: $color-secondary;
+            transition: background-color ease 0.8s;
+            //opacity: 0.7;
+            //transition: opacity ease 0.8s;
+          }
         }
       }
 
