@@ -100,6 +100,11 @@
             .fab,
             .fas {
               display: inline-block;
+              transition: color ease 1s;
+            }
+
+            .fab:hover, .fas:hover {
+              color: black;
             }
 
             .fab:after {
