@@ -79,6 +79,10 @@
     color: $color-light;
     width: 100%;
     border: none;
+    &:hover {
+      background-color: $color-secondary;
+      color: black;
+    }
   }
 
   @media all and (min-width: 768px) {
@@ -112,17 +116,4 @@
 #comments {
   height: 105px;
   margin-bottom: 30px;
-}
-
-.form__button {
-  @keyframes intro {
-    from {
-      opacity: 0;
-      transform: scale(10) rotate(-150deg);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
 }
