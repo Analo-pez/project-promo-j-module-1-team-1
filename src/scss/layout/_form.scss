@@ -1,0 +1,117 @@
+// CONTACTO
+
+.main {
+  height: 810px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+
+  @media all and (min-width: 768px) {
+    width: 422px;
+  }
+  &__title {
+    color: $color-primary;
+    font-family: $font-secondary;
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+  &__p {
+    font-family: $font-primary;
+    color: $color-fontPrimary;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+  &__note {
+    font-family: $font-primary;
+    font-size: 12px;
+    opacity: 80%;
+    color: $color-fontPrimary;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+// FORMULARIO
+
+.symbol {
+  color: $color-secondary;
+  display: inline;
+}
+.form {
+  font-family: $font-primary;
+  color: $color-fontPrimary;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+
+  &__name {
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+      display: flex;
+      width: 422px;
+    }
+  }
+  &__mail {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  &__telephone {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  &__comments {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  &__button {
+    height: 45px;
+    border-radius: 4px;
+    background-color: $color-primary;
+    color: $color-light;
+    width: 100%;
+    border: none;
+
+    @media all and (min-width: 768px) {
+      width: 50%;
+      transform: translate(210px, 0px);
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .form__boxDesktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__mail {
+    flex-basis: 60%;
+    margin-right: 44px;
+  }
+}
+
+.title2 {
+  margin-bottom: 10px;
+  display: flex;
+  align-self: flex-start;
+}
+.letters {
+  color: #b8b8b9;
+  height: 45px;
+  width: 100%;
+  opacity: 60%;
+}
+#comments {
+  height: 105px;
+  margin-bottom: 30px;
+}
+
+// @media only screen and (min-width: 1200px) {

@@ -1,8 +1,82 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  width: 100%;
+  height: 1px;
+  border-top: solid 1px $color-fontSecondary;
+  font-size: 14px;
+
+  &__mainContent {
+    background: $color-light;
+    font-family: Open Sans;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-right: 45px;
+      padding-left: 45px;
+    }
+  }
+
+  &__teamName {
+    color: $color-fontSecondary;
+    margin-top: 30px;
+    text-align: center;
+
+    @media all and (min-width: 768px) {
+      width: 50%;
+      text-align: left;
+    }
+  }
+
+  &__navigation {
+    font-weight: 600;
+    opacity: 0.75;
+    line-height: 1.43;
+    color: $color-fontPrimary;
+    text-align: center;
+    margin-top: 20px;
+
+    @media all and (min-width: 768px) {
+      width: 50%;
+      text-align: right;
+      margin-top: 30px;
+    }
+  }
+
+  &__navigationItems {
+    list-style-type: none;
+    padding: 0px;
+
+    @media all and (min-width: 768px) {
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+
+  &__logo {
+    width: 115.9px;
+    height: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+    @media all and (min-width: 768px) {
+      margin-top: 15px;
+      transform: translate(-10px, -60px);
+    }
+  }
 }

@@ -1,0 +1,157 @@
+
+/*ADALABERS SECTION*/
+
+.adalabers {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-light;
+    &__title{   
+      font-weight: 500;
+      text-align: center;
+      color: $color-primary;
+      font-family: $font-secondary;
+      margin-top: 30px;
+      
+      @media all and (min-width: 768px){
+        margin-bottom: 30px;
+        margin-top: 45px;
+      }
+    }
+    &__boxcards{
+      display: flex;
+      flex-direction: column;
+      }
+  }
+
+  /* ------------------------------- */
+
+  .adalabercard{
+    display: flex;
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    &__boximg{
+      background-color: $color-background;
+      width: 180px;
+      height: 180px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      border-radius: 12px;
+
+      @media all and (min-width: 768px) {
+        width: 205px;
+        height: 205px;
+        align-self: flex-start;
+        margin-top: 50px;
+      }
+      @media only screen and (min-width: 1200px){
+        width: 275px;
+        height: 275px;
+      }
+
+        &--photo{
+          width: 180px;
+          height: 180px;
+          border: 5px solid $color-background;
+          border-radius: 12px;
+
+          @media all and (min-width: 768px) {
+            width: 205px;
+            height: 205px;
+          }
+          @media only screen and (min-width: 1200px){
+            width: 275px;
+            height: 275px;
+          }
+      }
+    }
+    &__boxinfo{
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+        &--name{
+          font-family: $font-primary;
+          font-weight: normal;
+          font-size: 20px;
+          text-align: center;
+        }
+        &--info{
+          text-align: center;
+          line-height: 1.5;
+          padding-left: 20px;
+          padding-right: 20px;
+          color: $color-fontPrimary;
+          font-family: $font-primary;
+          margin: 15px;
+        }
+        &--icons{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 30px;
+          margin-top: 15px;
+          color: $color-primary;
+            .fab,
+            .fas {
+              display: inline-block;
+            }
+
+            .fab:after {
+              content: "·";
+              margin: 8px;
+              font-weight: bold;
+            }
+        }
+    }
+  }
+
+@media all and (min-width: 768px) {
+
+  .odd .adalabercard__boxinfo--name,
+  .odd .adalabercard__boxinfo--info {
+    text-align: left;
+    margin-left: 35px;
+    padding: 0px;
+  }
+
+  .pair .adalabercard__boxinfo--name,
+  .pair .adalabercard__boxinfo--info {
+    text-align: right;
+    margin-right: 35px;
+    padding: 0px;
+  }
+  .odd .adalabercard__boxinfo--icons {
+    justify-content: flex-start;
+    margin-left: 35px;
+  }
+
+  .pair .adalabercard__boxinfo--icons {
+    justify-content: flex-end;
+    margin-right: 35px;
+  }
+  .pair {
+    flex-direction: row-reverse;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+
+  .adalabers__boxCards{
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 138px;
+    margin-right: 138px;
+  }
+
+  .pair {
+    flex-direction: row-reverse;
+  }
+}

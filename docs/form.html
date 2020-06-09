@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b06a5f3def.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contacto</title>
+  </head>
+  <header>
+    <div class="hero">
+      <div class="hero__imagecontainer">
+        <img
+          src="./assets/images/hero-nobackground.png"
+          alt="The A team"
+          title="The A team"
+          class="hero__imagecontainer--adjust"
+        />
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav__container wrapper">
+        <div class="nav__container--headertitle">
+          <a href="./index.html" title="IR A HOME">        
+            <img src="./assets/images/logo_a_team.png" alt="The A Team" title="Logo The A Team">
+          </a>
+        </div>
+        <ul class="nav__container--navcontent">
+          <li>
+            <a href="./index.html#team" title="IR A EQUIPO">EQUIPO</a>
+          </li>
+          <li>
+            <a href="./index.html#adalabers" title="IR A QUIENES SOMOS">QUIENES SOMOS</a>
+          </li>
+          <li>
+            <a href="./form.html" title="IR A CONTACTO">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section>
+      <div class="contact wrapper">
+        <span class="contact__title">CONTACTO</span>
+        <p class="contact__p">
+          Para más información sobre las componentes del A-Team, rellene el
+          formulario y nos pondremos en contacto en menos tiempo del que
+          tardaríamos en desactivar un artefacto explosivo.
+        </p>
+        <span class="contact__note"
+          >Todos los campos marcados con
+          <p class="symbol">*</p>
+          son obligatorios</span
+        >
+      </div>
+      <div class="form wrapper">
+        <form action="/signup" method="post">
+          <div class="form__name">
+            <label for="full__name"></label>
+            <span class="title2"
+              >nombre completo
+              <p class="symbol">*</p></span
+            >
+            <input
+              class="letters"
+              placeholder="Nombre..."
+              id="fullName"
+              type="text"
+              name="firstName"
+              required
+            />
+          </div>
+          <div class="form__boxDesktop">
+            <div class="form__mail">
+              <label for="mail"></label>
+              <span class="title2"
+                >email
+                <p class="symbol">*</p></span
+              >
+              <input
+                class="letters"
+                placeholder="nombre.apellidos@gmail.com"
+                id="mail"
+                type="emailAdress"
+                name="mail"
+                required
+              />
+            </div>
+            <div class="form__telephone">
+              <label for="telephone"></label>
+              <span class="title2">teléfono</span>
+              <input
+                class="letters"
+                placeholder="ej: 123456789"
+                id="telephone"
+                type="tel"
+                name="telephone"
+              />
+            </div>
+          </div>
+          <div class="form__comments">
+            <label for="comments"></label>
+            <span class="title2"
+              >mensaje
+              <p class="symbol">*</p></span
+            >
+            <textarea
+              class="letters"
+              placeholder="¿Qué necesitas?"
+              id="comments"
+              type="number"
+              name="phone"
+              rows="4"
+              cols="40"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <input class="form__button" type="submit" value="ENVIAR" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__mainContent wrapper">
+      <p class="footer__teamName">The A-Team © 2020</p>
+      <nav class="footer__navigation">
+        <ul class="footer__navigationItems">
+          <li>
+            <a href="./index.html#team" title="Equipo">EQUIPO</a>
+          </li>
+          <li>
+            <a href="./index.html#adalabers" title="Quiénes somos">QUIÉNES SOMOS</a>
+          </li>
+          <li>
+            <a href="./form.html" title="Contacto">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <img
+          src="./assets/images/logo-adalab.png"
+          alt="Logo Adalab"
+          title="Logo Adalab"
+          class="footer__logo"
+        />
+      </div>
+    </div>
+  </footer>
+
+</html>
