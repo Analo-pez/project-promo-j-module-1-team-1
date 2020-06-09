@@ -62,7 +62,12 @@
     a {
       color: inherit;
       text-decoration: inherit;
+      transition: all 0.4s ease;
     }
+  }
+
+  &__navigationItems a:hover {
+    border-bottom: solid 3px $color-primary;
   }
 
   &__logo {
