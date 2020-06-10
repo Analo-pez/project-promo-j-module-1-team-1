@@ -19,6 +19,19 @@
   transform: translate(0%, -120%);
   padding: 14px 15px 16px 0px;
   margin: 0px 15px;
+  animation-duration: 1s;
+  animation-name: quoteFadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+
+  @keyframes quoteFadeIn {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 80%;
+    }
+  }
 
   @media all and (min-width: 768px) {
     background-color: $color-background;
