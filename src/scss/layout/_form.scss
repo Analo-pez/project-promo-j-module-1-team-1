@@ -79,6 +79,11 @@
     color: $color-light;
     width: 100%;
     border: none;
+    transition: color ease 1s, background-color ease 1s;
+    &:hover{
+      background-color: $color-secondary;
+      color: $color-fontPrimary;
+    }
 
     @media all and (min-width: 768px) {
       width: 50%;
