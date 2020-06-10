@@ -3,20 +3,28 @@
 .hero {
   height: 421px;
   position: relative;
-  background-color: rgba(172, 236, 229, 0.9);
+  background-image: url("../images/background-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 3%;
+  object-fit: contain;
 
   @media all and (min-width: 768px) {
     height: 421px;
   }
 
   &__imagecontainer {
+    opacity: 1;
     width: 100%;
-    height: 90%;
+    height: 300px;
     max-width: 1200px;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
+
+    @media all and (min-width: 768px) {
+      transform: translate(-50%, -15%);
+    }
 
     &--adjust {
       width: 100%;
@@ -26,7 +34,7 @@
       bottom: 0;
       left: 50%;
       transform: translate(-50%);
-      object-fit: contain; //makes the image resize in its container
+      object-fit: contain;
     }
   }
 }
