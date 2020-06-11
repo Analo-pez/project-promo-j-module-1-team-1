@@ -50,12 +50,12 @@
       margin-top: 15px;
       border-radius: 12px;
 
-
+      
       @media all and (min-width: 768px) {
         width: 215px;
         height: 215px;
         align-self: flex-start;
-        margin-top: 50px;
+        margin-top: 20px;
       }
       @media only screen and (min-width: 1200px){
         width: 285px;
@@ -68,9 +68,11 @@
           border-radius: 12px;
           position: relative;
           top: 0;
-          opacity: 1;
           transition: opacity ease 1s;
           
+          &:hover{
+            opacity: 0;
+          }
             @media all and (min-width: 768px) {
               width: 205px;
               height: 205px;
@@ -86,11 +88,14 @@
           height: 180px;
           border-radius: 12px;
           position: absolute;
-          opacity: 0;
+          opacity: 1;
           left: 0;
           top: 0;
           transition: opacity ease 1s;
 
+          &:hover{
+            opacity: 0;
+          }
           @media all and (min-width: 768px) {
             width: 205px;
             height: 205px;
@@ -255,6 +260,3 @@
   right: 0;
 }
 
-  .adalabercard__boximg--photo:hover, .adalabercard__boximg--photo:active,  .adalabercard__boximg--photo:focus{
-    opacity: 0;
-  }
