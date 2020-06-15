@@ -73,6 +73,7 @@
     margin-top: 10px;
   }
   &__button {
+    cursor: pointer;
     height: 45px;
     border-radius: 4px;
     background-color: $color-primary;
@@ -80,7 +81,7 @@
     width: 100%;
     border: none;
     transition: color ease 1s, background-color ease 1s;
-    &:hover{
+    &:hover {
       background-color: $color-secondary;
       color: $color-fontPrimary;
     }
@@ -97,7 +98,7 @@
     justify-content: space-between;
   }
   .form__mail {
-    flex-basis: 60%;
+    flex-basis: 70%;
     margin-right: 44px;
   }
 }
@@ -108,18 +109,15 @@
   align-self: flex-start;
 }
 .letters {
-  color: #b8b8b9;
   height: 45px;
   width: 100%;
-  opacity: 60%;
 }
 #comments {
   height: 105px;
   margin-bottom: 30px;
 }
 
-
-.box__button{
+.box__button {
   display: flex;
   justify-content: flex-end;
 }
