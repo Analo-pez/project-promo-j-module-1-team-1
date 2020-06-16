@@ -1,28 +1,65 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+![EquipoA](http://beta.adalab.es/project-promo-j-module-1-team-1/)
 
-# Adalab web starter kit
+# The A-Team
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+Bienvenidas al Readme del Proyecto **Equipo-A** donde os compartimos los secretos de nuestro código y os damos algunas pautas para profundizar en nuestro trabajo.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+Este proyecto forma parte del primer módulo del curso de programación para mujeres de Adalab, durante el que desarrollamos **nuestra primera página web!**
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+## ¿Qué es The A- Team Project?
+
+Una web para dar a conocer nuestros perfiles profesionales y facilitar el contacto con posibles empresas interesadas.
+
+The A-Team Project nos permite compartir nuestra historia como adalabers y demostrar algunas de las capacidades adquiridas durante el curso tanto a nivel técnico como organizativo (gestión de trabajo en grupo, metodología agile, trabajo en remoto).
+
+Además de atender a un diseño responsive y a una estructura de maquetación muy diversa la web incorpora un formulario de contacto, animaciones y enlaces a diferentes secciones dentro de la página.
+
+## Composición de nuestra página
+
+Esta página incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local además de 3 tipos de ficheros y carpetas:
 
 - Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
 - La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
 - Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
 
-## Guía de inicio rápido
+La estructura de nuestra página web responde a las siguientes secciones:
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+- Un`index.html/`
+- Un `forms.html/` que recoge el formulario de contacto vinculado al index principal.
+- Un Footer`footer/`.
+- Un Header`header/`.
+- `CardAdalaber/`. Que incorpora las tarjetas personalizables de cada una de nosotras.
+- `Adalabers/`.
+- `Team/`.
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+## Construido con
+
+- HTML, SASS.
+- Gulp,
+- Starter Kit Adalab.
+- Node JS y NPM
+- VS Code
+
+## Autoras
+
+- Alexandra "Murdock" López.
+- Ana "Hannibal" López.
+- Alba "Fénix" San Martín.
+- Amanda "M.A." Palma.
+- Ana "Amy" Fernández.
+
+## Agradecimientos.
+
+A nuestros profes y compañeras de Adalab por sus feedbacks y recomendaciones.
+
+## Guía de inicio rápido para trabajar sobre la base de nuestro proyecto.
+
+Este es un proyecto abierto, considéralo tuyo y en caso de querer trabajar sobre nuestros pasos sigue las siguientes indicaciones.
+
+> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Proyecto:
 
 1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
+1. Clona **nuestro proyecto**.
    - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
 1. **Abre una terminal** en la carpeta raíz de tu repositorio.
 1. **Instala las dependencias** locales ejecutando en la terminal el comando:
@@ -44,14 +81,14 @@ Este comando:
 - **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
 - También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
 - También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+  - Convierte los ficheros SASS en CSS.
+  - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
 
 Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
 
 ### Pasos para publicar el proyecto en GitHub Pages:
 
-Para generar tu página para producción ejecuta el comando:
+Para generar aportaciones a nuestro proyecto para producción ejecuta el comando:
 
 ```bash
 npm run docs
@@ -69,6 +106,7 @@ Además, los comandos:
 ```bash
 npm run push-docs
 ```
+
 o
 
 ```bash
@@ -111,12 +149,10 @@ src
     └─ partials
 ```
 
-## Vídeotutoriales del Starter kit
+## Para recibir ayuda sobre nuestro proyecto.
 
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
+No dudes en contactar con nosotras a través del formulario de la web.
 
-## Falta algo?
+## Mantenimiento.
 
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+Este es un proyecto abierto con lo que invitamos a cualquier colaboradora a clonarse nuestro repositorio y añadir mejoras y sugerencias.
