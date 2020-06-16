@@ -234,29 +234,59 @@
 } 
 
 /*NOMBRES*/
+.odd {
+  & .adalabercard__boxinfo--name{
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+  }
 
-.adalabercard__boxinfo--name{
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-  overflow: hidden;
+  & .adalabercard__boxinfo--name:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    right: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 57%, rgba(0,0,0,0.85) 89%, rgba(227,202,38,0.84) 95%, rgba(255,0,0,0.83) 100%);
+    height: 2px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  & .adalabercard__boxinfo--name:hover:before, .adalabercard__boxinfo--name:focus:before, .adalabercard__boxinfo--name:active:before {
+    left: 0;
+    right: 0;
+  }
 }
 
-.adalabercard__boxinfo--name:before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0%;
-  right: 100%;
-  bottom: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 57%, rgba(0,0,0,0.85) 89%, rgba(227,202,38,0.84) 95%, rgba(255,0,0,0.83) 100%);
-  height: 2px;
-  transition-property: left, right;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+.pair {
+  & .adalabercard__boxinfo--name{
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .adalabercard__boxinfo--name:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0%;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255,0,0,0.83) 0%, rgba(227,202,38,0.84) 5%, rgba(0,0,0,0.85) 11%,  rgba(0,0,0,0.9)43%,  rgba(0,0,0,0.9)100%);
+    height: 2px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  & .adalabercard__boxinfo--name:hover:before, .adalabercard__boxinfo--name:focus:before, .adalabercard__boxinfo--name:active:before {
+    left: 0;
+    right: 0;
+  }
 }
 
-.adalabercard__boxinfo--name:hover:before, .adalabercard__boxinfo--name:focus:before, .adalabercard__boxinfo--name:active:before {
-  left: 0;
-  right: 0;
-}
+
 
